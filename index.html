@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>易智慧 ETZ | 企業 AI 應用導入與訂閱式顧問團隊</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; scroll-behavior: smooth; background-color: #ffffff; }
+        .bg-etz-dark { background-color: #0f172a; }
+        .consultant-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            position: relative;
+        }
+        .consultant-hero::after {
+            content: ""; position: absolute; inset: 0;
+            background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .nav-active { color: #1e40af; font-weight: 700; position: relative; }
+        .nav-active::after {
+            content: ''; position: absolute; width: 100%; height: 2px; bottom: -4px; left: 0; background-color: #1e40af;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- 統一導覽列 -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" stroke="#1e40af" stroke-width="2.5"/>
+                        <path d="M20 15V25M12 20H28" stroke="#1e40af" stroke-width="1.5"/>
+                    </svg>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-tight text-slate-900">易智慧 <span class="text-blue-700">ETZ</span></span>
+                        <span class="text-[9px] tracking-[0.2em] uppercase text-slate-400 font-bold">Implementation & Consulting</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-12">
+                    <a href="index.html" class="text-sm nav-active">服務首頁</a>
+                    <a href="product.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">應用系統</a>
+                    <a href="team.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">顧問團隊</a>
+                    <a href="#contact" class="bg-slate-900 text-white px-6 py-2.5 rounded-sm text-sm font-medium hover:bg-blue-800 transition">預約初步診斷</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="consultant-hero py-32 lg:py-48 text-white relative">
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-8 tracking-tight leading-tight">讓企業真正把 AI<br><span class="text-blue-400">用在決策與流程上</span></h1>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed">易智慧 ETZ｜企業 AI 應用導入與訂閱式顧問團隊</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="product.html" class="w-full sm:w-auto bg-blue-600 text-white px-10 py-4 rounded-sm font-bold hover:bg-blue-700 transition text-center shadow-lg">看看企業可以怎麼開始</a>
+                    <a href="product.html" class="w-full sm:w-auto border border-white/30 text-white px-10 py-4 rounded-sm font-medium hover:bg-white/10 transition text-center">了解我們的應用系統</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 敘事區塊：市場現實 -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-sm uppercase tracking-[0.4em] text-blue-600 font-bold mb-4">Market Reality</h2>
+                        <h3 class="text-3xl font-bold text-slate-900 mb-8">為什麼大多數的 AI 專案<br>最終都停留在嘗試階段？</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed text-lg">現今多數企業已經接觸過 AI，但往往發現一個現實：市面上工具很多，但真正能落地、融入日常業務並產生價值的應用卻很少。</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><span class="text-blue-600 mr-3 font-bold">/</span><span class="text-slate-700">工具雖多，卻難以對接企業內部複雜的作業邏輯。</span></li>
+                            <li class="flex items-start"><span class="text-blue-600 mr-3 font-bold">/</span><span class="text-slate-700 font-bold text-slate-900">這往往不是技術問題，而是「不知道從哪裡開始」。</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-12 border border-slate-100 text-center">
+                        <div class="text-6xl mb-6 grayscale opacity-20">?</div>
+                        <p class="text-slate-400 italic">「我們有很多資料，也有很多 AI 工具，<br>但它們該如何變成我們的工作流程？」</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯繫區塊 (ID 作為聯繫按鈕跳轉目標) -->
+        <section id="contact" class="py-24 bg-slate-50">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-8">啟動您的 AI 應用路徑</h2>
+                <p class="text-slate-500 mb-12">與我們的資深顧問預約一場 30 分鐘的診斷對話，釐清適合您的切入點。</p>
+                <div class="bg-white p-8 shadow-sm border border-slate-200">
+                    <p class="text-lg font-bold text-slate-900">聯繫信箱：service@etz-ai.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-slate-100 py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center text-sm text-slate-400">
+            © 2026 ETZ Consulting Team.
+        </div>
+    </footer>
+</body>
+</html>

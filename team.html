@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>團隊介紹 | 易智慧 ETZ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #ffffff;
+            color: #1e293b;
+        }
+        /* 顧問公司風格：強調留白與極簡邊框 */
+        .member-container {
+            border-top: 1px solid #e2e8f0;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            transition: all 0.3s ease;
+        }
+        .member-container:hover {
+            background-color: #f8fafc;
+        }
+        /* 照片預留區塊 */
+        .photo-placeholder {
+            background-color: #f1f5f9;
+            aspect-ratio: 4 / 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+            overflow: hidden;
+            position: relative;
+        }
+        .photo-placeholder::after {
+            content: "PORTRAIT";
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            color: #94a3b8;
+            font-weight: 700;
+        }
+        /* 導航底線 */
+        .nav-underline {
+            position: relative;
+        }
+        .nav-underline::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #1e40af;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- 導覽列 -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" stroke="#1e40af" stroke-width="2.5"/>
+                        <path d="M20 15V25M12 20H28" stroke="#1e40af" stroke-width="1.5"/>
+                    </svg>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-tight text-slate-900">易智慧 <span class="text-blue-700">ETZ</span></span>
+                        <span class="text-[9px] tracking-[0.2em] uppercase text-slate-400 font-bold">Implementation & Consulting</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-12">
+                    <a href="index.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">首頁敘事</a>
+                    <a href="product.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">應用系統</a>
+                    <a href="team.html" class="text-sm font-bold text-blue-700 nav-underline">顧問團隊</a>
+                    <a href="index.html#contact" class="bg-slate-900 text-white px-6 py-2.5 rounded-sm text-sm font-medium hover:bg-blue-800 transition">聯繫顧問團隊</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 頁頭：專業服務定位 -->
+        <header class="py-20 lg:py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="max-w-3xl">
+                    <h2 class="text-sm uppercase tracking-[0.4em] text-blue-600 font-bold mb-6">Expertise & Governance</h2>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-8 leading-tight">
+                        結合商業洞察與技術落地，<br>組成企業級專案的完整體系
+                    </h1>
+                    <p class="text-lg text-slate-500 font-light leading-relaxed">
+                        易智慧 ETZ 的核心實力，來自於跨領域專家的深度協作。我們不僅具備技術實作能力，更擁有企業治理、流程再造與商業策略的豐富經驗，確保每一個 AI 應用都能與您的組織運作無縫接軌。
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 核心團隊名單 -->
+        <section class="pb-24">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                
+                <div class="grid lg:grid-cols-2 gap-x-16 gap-y-4">
+                    
+                    <!-- 1. 李庚 Keng Lee -->
+                    <div class="member-container flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-40 flex-shrink-0">
+                            <div class="photo-placeholder">
+                                <svg class="w-12 h-12 text-slate-200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-1">李庚 Keng Lee</h3>
+                            <p class="text-blue-700 font-bold text-sm mb-4 tracking-wide uppercase">執行長</p>
+                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：企業決策智慧與 AI 應用架構設計</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                專注於協助企業將 AI 導入實際決策與流程中，強調可理解、可驗證、可長期運作的智慧系統。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2. 董家銘 Frank -->
+                    <div class="member-container flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-40 flex-shrink-0">
+                            <div class="photo-placeholder">
+                                <svg class="w-12 h-12 text-slate-200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-1">董家銘 Frank</h3>
+                            <p class="text-blue-700 font-bold text-sm mb-4 tracking-wide uppercase">技術長</p>
+                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：企業系統整合與 AI 工程落地</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                負責將複雜的 AI 技術轉化為企業可部署、可維運的系統，確保導入過程穩定且符合實務需求。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 3. 呂桂漢 -->
+                    <div class="member-container flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-40 flex-shrink-0">
+                            <div class="photo-placeholder">
+                                <svg class="w-12 h-12 text-slate-200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-1">呂桂漢</h3>
+                            <p class="text-blue-700 font-bold text-sm mb-4 tracking-wide uppercase">顧問團代表</p>
+                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：企業流程、治理與風險顧問</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                長期協助企業進行流程再造與治理規劃，確保 AI 應用符合組織運作邏輯與合規要求。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 4. 蔡易如 Julia -->
+                    <div class="member-container flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-40 flex-shrink-0">
+                            <div class="photo-placeholder">
+                                <svg class="w-12 h-12 text-slate-200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-1">蔡易如 Julia</h3>
+                            <p class="text-blue-700 font-bold text-sm mb-4 tracking-wide uppercase">商業與市場推動</p>
+                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：市場策略與企業合作</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                負責商業模式、產業合作與市場溝通，協助企業理解 AI 導入的實際價值與應用方式。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 5. 麥雲傑 Jay -->
+                    <div class="member-container flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-40 flex-shrink-0">
+                            <div class="photo-placeholder">
+                                <svg class="w-12 h-12 text-slate-200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-1">麥雲傑 Jay</h3>
+                            <p class="text-blue-700 font-bold text-sm mb-4 tracking-wide uppercase">專案與整合顧問</p>
+                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：跨域專案管理與系統整合</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                專精於大型專案治理與跨部門協調，確保複雜 AI 導入專案能穩定落地並持續運作。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 6. 夏松明 Gary Hsia -->
+                    <div class="member-container flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-40 flex-shrink-0">
+                            <div class="photo-placeholder">
+                                <svg class="w-12 h-12 text-slate-200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-1">夏松明 Gary Hsia</h3>
+                            <p class="text-blue-700 font-bold text-sm mb-4 tracking-wide uppercase">產品與策略顧問</p>
+                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：產品定義與決策策略設計</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                協助企業釐清真正的問題與決策需求，確保 AI 應用具備長期可行的商業價值。
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯合說明區塊：強調完整性 -->
+        <section class="py-24 bg-slate-900 text-white">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <p class="text-xl lg:text-2xl font-light leading-relaxed mb-8">
+                    「我們的團隊結合顧問、技術與產業經驗，<br class="hidden md:block">
+                    能陪伴企業從第一個 AI 應用開始，逐步建立長期能力。」
+                </p>
+                <div class="w-12 h-1 bg-blue-500 mx-auto mb-12"></div>
+                <div class="text-sm text-slate-400 tracking-widest uppercase">
+                    Strategic Support • Implementation • Governance
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-white text-center">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 border-t border-slate-100">
+                <div class="mt-20">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-8">與具備實務經驗的團隊對話</h2>
+                    <p class="text-slate-500 mb-12 max-w-xl mx-auto">導入企業級 AI 不是一場技術實驗，而是一項組織能力的提升。聯繫我們，開始規劃您的智慧化路徑。</p>
+                    <a href="index.html#contact" class="inline-block bg-blue-600 text-white px-12 py-4 font-bold hover:bg-blue-700 transition shadow-lg">預約初步診斷對話</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-100 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
+            <div class="mb-4 md:mb-0">
+                <span class="font-bold text-slate-900">易智慧 ETZ / EtzAI</span> | 企業 AI 應用導入與訂閱式顧問團隊
+            </div>
+            <div class="flex space-x-12">
+                <a href="index.html" class="hover:text-blue-700">首頁</a>
+                <a href="product.html" class="hover:text-blue-700">導入方案</a>
+                <span>© 2026 ETZ Consulting. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
