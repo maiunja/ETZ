@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>易智慧 EtzAI | 企業 AI 應用導入與訂閱式顧問團隊</title>
+    <title>易智慧 EtzAI｜內部討論草稿</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Noto Sans TC', sans-serif; scroll-behavior: smooth; background-color: #ffffff; }
         .serif-font { font-family: 'Noto Serif TC', serif; }
         .bg-etz-dark { background-color: #0f172a; }
-        .consultant-hero {
+        .hero-bg {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             position: relative;
         }
-        .consultant-hero::after {
-            content: ""; position: absolute; inset: 0;
+        .hero-bg::after {
+            content: "";
+            position: absolute;
+            inset: 0;
             background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
             background-size: 40px 40px;
         }
         .nav-active { color: #1e40af; font-weight: 700; position: relative; }
         .nav-active::after {
-            content: ''; position: absolute; width: 100%; height: 2px; bottom: -4px; left: 0; background-color: #1e40af;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #1e40af;
         }
-        /* 視覺裝飾 */
         .worldview-image-container {
             background-color: #f8fafc;
             border-left: 1px solid #e2e8f0;
@@ -43,129 +50,326 @@
                     </svg>
                     <div class="flex flex-col">
                         <span class="text-xl font-bold tracking-tight text-slate-900">易智慧 <span class="text-blue-700">EtzAI</span></span>
-                        <span class="text-[9px] tracking-[0.2em] uppercase text-slate-400 font-bold">Implementation & Consulting</span>
+                        <span class="text-[9px] tracking-[0.2em] uppercase text-slate-400 font-bold">Internal Draft • Focus & Alignment</span>
                     </div>
                 </a>
                 <div class="hidden md:flex items-center space-x-12">
-                    <a href="index.html" class="text-sm nav-active">服務首頁</a>
-                    <a href="product.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">導入方案</a>
-                    <a href="team.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">顧問團隊</a>
-                    <a href="#contact" class="bg-slate-900 text-white px-6 py-2.5 rounded-sm text-sm font-medium hover:bg-blue-800 transition">預約初步診斷</a>
+                    <a href="index.html" class="text-sm nav-active">易智慧</a>
+                    <a href="product.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">智慧架構</a>
+                    <a href="team.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">專業團隊</a>
+                    <a href="#internal-note" class="bg-slate-900 text-white px-6 py-2.5 rounded-sm text-sm font-medium hover:bg-blue-800 transition">本週聚焦</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <main>
-        <!-- Hero Section -->
-        <div class="consultant-hero py-32 lg:py-56 text-white relative overflow-hidden">
+        <!-- Hero -->
+        <section class="hero-bg py-24 lg:py-40 text-white relative overflow-hidden">
             <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                <h1 class="text-4xl lg:text-7xl font-bold mb-8 tracking-tight leading-tight">讓企業真正把 AI<br><span class="text-blue-400">用在決策與流程上</span></h1>
-                <p class="text-xl text-slate-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed">易智慧 EtzAI｜企業 AI 應用導入與訂閱式顧問團隊</p>
-                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="product.html" class="w-full sm:w-auto bg-blue-600 text-white px-10 py-4 rounded-sm font-bold hover:bg-blue-700 transition text-center shadow-lg">看看企業可以怎麼開始</a>
-                    <a href="product.html" class="w-full sm:w-auto border border-white/30 text-white px-10 py-4 rounded-sm font-medium hover:bg-white/10 transition text-center">了解我們的應用系統</a>
+                <h1 class="text-4xl lg:text-6xl font-bold mb-8 tracking-tight leading-tight">讓組織的判斷，<br><span class="text-blue-400">成為可以被理解與延續的智慧</span></h1>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto mb-6 font-light leading-relaxed">易智慧 EtzAI，協助企業把經驗與決策，轉化為可幫助您持續成長的智慧</p>
+                <p id="internal-note" class="text-xs text-slate-400 tracking-wider">＊本網站為內部討論用草稿，用於聚焦方向與命名原則，非對外版本。</p>
+                <div class="mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="product.html" class="w-full sm:w-auto bg-blue-600 text-white px-10 py-4 rounded-sm font-bold hover:bg-blue-700 transition text-center shadow-lg">查看智慧架構</a>
+                    <a href="team.html" class="w-full sm:w-auto border border-white/30 text-white px-10 py-4 rounded-sm font-medium hover:bg-white/10 transition text-center">認識專業團隊</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- 【新增區塊｜品牌世界觀段】定錨品牌靈魂 -->
-        <section class="py-0 bg-white border-b border-slate-100 overflow-hidden">
+        <!-- 易智慧是什麼 -->
+        <section class="py-20 lg:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 serif-font mb-8">易智慧（EtzAI）是一個專注於組織智慧結構化的團隊。</h2>
+                    <p class="text-slate-600 serif-font text-lg leading-relaxed mb-8">我們觀察到，多數企業在成長過程中，每天都在做重要決策，卻很少有人能清楚說明：</p>
+                    <ul class="grid md:grid-cols-3 gap-4 text-slate-700">
+                        <li class="p-5 border border-slate-100 bg-slate-50">
+                            <p class="font-bold">為什麼當初會這樣判斷</p>
+                        </li>
+                        <li class="p-5 border border-slate-100 bg-slate-50">
+                            <p class="font-bold">這個決策依據來自哪些經驗</p>
+                        </li>
+                        <li class="p-5 border border-slate-100 bg-slate-50">
+                            <p class="font-bold">新成員該如何理解過去的選擇</p>
+                        </li>
+                    </ul>
+                    <p class="mt-10 text-slate-600 serif-font text-lg leading-relaxed">當決策只存在於少數人的腦中，組織就會在擴張、人員異動或環境改變時，不斷重來。<br>易智慧處理的，正是這個斷層。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 世界觀：生命之樹 + 圖片位置 -->
+        <section class="py-0 bg-white border-y border-slate-100 overflow-hidden">
             <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch">
-                <!-- 文字敘事區 -->
-                <div class="w-full lg:w-1/2 py-24 lg:py-32 px-6 lg:px-12 flex flex-col justify-center">
-                    <div class="mb-12">
-                        <span class="text-blue-600 font-bold tracking-[0.4em] uppercase text-xs mb-4 block">Our Identity</span>
-                        <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 serif-font">易智慧 EtzAI｜讓智慧成為可以生長的結構</h2>
+                <!-- 文字 -->
+                <div class="w-full lg:w-1/2 py-20 lg:py-24 px-6 lg:px-12 flex flex-col justify-center">
+                    <div class="mb-10">
+                        <span class="text-blue-600 font-bold tracking-[0.4em] uppercase text-xs mb-4 block">EtzAI Worldview</span>
+                        <h3 class="text-3xl lg:text-4xl font-bold text-slate-900 serif-font">生命之樹：讓智慧成為可以生長的脈絡</h3>
                     </div>
-                    <div class="serif-font text-xl text-slate-700 leading-relaxed space-y-10">
-                        <p>
-                            <strong class="text-slate-900 text-2xl">EtzAI</strong> 取名自 <span class="italic tracking-wider text-blue-800">Etz haChayim</span>（生命之樹），象徵智慧並非一次生成，而是隨著經驗、知識與決策不斷分支與成長的結構。
-                        </p>
-                        <p>
-                            我們相信，AI 不應取代人的判斷，而應成為人類思考與決策能力的延伸。企業真正需要的不是更多工具，而是一套能被理解、能被信任、能持續演進的智慧結構。
-                        </p>
-                        <div class="pt-8 border-t border-slate-200">
-                            <p class="text-slate-900 font-bold italic text-lg leading-relaxed">
-                                「智慧不是答案本身，<br class="md:hidden">而是知道『為什麼這樣判斷』。」
-                            </p>
-                        </div>
+                    <div class="serif-font text-lg text-slate-700 leading-relaxed space-y-8">
+                        <p>EtzAI 取名自 <span class="italic tracking-wider text-blue-800">Etz haChayim</span>（生命之樹）。我們將組織中的經驗、判斷與決策脈絡，視為一棵會隨時間成長的智慧脈絡，而不是一次性交付的系統。</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="text-blue-600 mr-2 mt-1">●</span><span><strong>根部</strong>：既有的經驗與隱性判斷</span></li>
+                            <li class="flex items-start"><span class="text-blue-600 mr-2 mt-1">●</span><span><strong>樹幹</strong>：可被理解與驗證的決策邏輯</span></li>
+                            <li class="flex items-start"><span class="text-blue-600 mr-2 mt-1">●</span><span><strong>枝葉</strong>：在不同情境下延伸的應用與推演</span></li>
+                        </ul>
+                        <p>在這樣的結構中，AI 不再只是給答案的工具，而是成為理解與放大組織思考能力的媒介。</p>
+                        <p class="text-slate-900 font-bold italic">智慧不是答案本身，而是知道「為什麼這樣判斷」。</p>
                     </div>
                 </div>
-                
-                <!-- 視覺配置區：人類之手 × AI 之手輕觸 -->
-                <div class="w-full lg:w-1/2 worldview-image-container relative min-h-[400px] flex items-center justify-center">
-                    <div class="absolute inset-0 opacity-40">
-                        <svg width="100%" height="100%" viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 600C150 550 250 450 400 300" stroke="#cbd5e1" stroke-width="0.5"/>
-                            <path d="M0 500C100 450 200 350 400 100" stroke="#cbd5e1" stroke-width="0.5"/>
-                        </svg>
-                    </div>
+
+                <!-- 圖片：精準位置（右側半版、置中、附說法） -->
+                <div class="w-full lg:w-1/2 worldview-image-container relative min-h-[420px] flex items-center justify-center">
                     <div class="relative z-10 text-center px-8">
-                        <!-- 概念意象圖位址 -->
-                        <div class="max-w-md mx-auto">
-                                                        <p class="mt-8 text-xs text-slate-400 tracking-[0.3em] uppercase font-bold"><img src="ETZ-worldview.jpg"></p>
+                        <div class="max-w-xl mx-auto">
+                            <img src="ETZ logo.jpg" alt="EtzAI 生命之樹世界觀概念圖" class="w-full h-auto rounded-sm shadow-sm border border-slate-200" />
+                            <p class="mt-5 text-xs text-slate-500 leading-relaxed">（圖）生命之樹世界觀概念圖：用拓撲/脈絡來表達「經驗 → 判斷 → 決策」如何在組織中延伸與累積。</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 【品牌核心理念段落】補強原有細節 -->
-        <section class="py-24 bg-slate-50 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-                <div class="max-w-3xl">
-                    <p class="text-slate-600 serif-font text-lg leading-relaxed mb-8">
-                        如同生命之樹的枝幹與脈絡，企業的制度、流程、經驗與知識，需要被妥善連結、理解與延續，而不是被封裝成不可解釋的黑盒。
-                    </p>
-                    <p class="text-slate-600 serif-font text-lg leading-relaxed">
-                        易智慧 EtzAI 所做的，不是打造一個全知的 AI，而是協助企業建立一套能被理解、能被信任、能持續成長的智慧結構，讓每一次決策，都能站在過去累積的基礎之上。
-                    </p>
+        <!-- 方法段 -->
+        <section class="py-20 lg:py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <p class="text-slate-600 serif-font text-lg leading-relaxed">易智慧並不販售單一產品或制式解法。我們與企業一起，從實際運作與決策場景出發，逐步建立能被理解、能被討論、也能被延續的智慧結構。</p>
+                    <p class="mt-6 text-slate-600 serif-font text-lg leading-relaxed">這些結構，會隨著使用與回饋持續調整，而不是在專案結束後停止生長。</p>
                 </div>
             </div>
         </section>
 
-        <!-- 【服務架構｜顧問核心價值】 -->
-        <section class="py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                <h2 class="text-sm uppercase tracking-[0.4em] text-blue-600 font-bold mb-16">Strategic Value</h2>
-                <div class="grid lg:grid-cols-3 gap-16">
-                    <div>
-                        <div class="w-12 h-1 bg-blue-600 mx-auto mb-8"></div>
-                        <h4 class="text-xl font-bold mb-4 text-slate-900">制度化智慧傳承</h4>
-                        <p class="text-slate-500 text-sm leading-relaxed">將高階主管與資深專家的決策邏輯轉化為可見、可維護的結構，讓組織不再受限於個人流動。</p>
-                    </div>
-                    <div>
-                        <div class="w-12 h-1 bg-blue-600 mx-auto mb-8"></div>
-                        <h4 class="text-xl font-bold mb-4 text-slate-900">流程型 AI 深度導入</h4>
-                        <p class="text-slate-500 text-sm leading-relaxed">深入業務流程的第一線，將 AI 轉化為減少人為失誤、提升回應品質的關鍵環節，而非外部工具。</p>
-                    </div>
-                    <div>
-                        <div class="w-12 h-1 bg-blue-600 mx-auto mb-8"></div>
-                        <h4 class="text-xl font-bold mb-4 text-slate-900">可稽核的風險推理</h4>
-                        <p class="text-slate-500 text-sm leading-relaxed">建立清晰的因果關係鏈。在高度合規要求的環境中，確保每一條建議都能接受專業稽核。</p>
-                    </div>
+        <!-- 三個智慧架構（保留連結） -->
+        <section class="py-20 lg:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-14">
+                    <h2 class="text-sm uppercase tracking-[0.4em] text-blue-600 font-bold mb-6">Architecture Modules</h2>
+                    <h3 class="text-3xl lg:text-4xl font-bold text-slate-900 serif-font">三個可獨立導入、彼此連結的智慧架構</h3>
+                    <p class="mt-6 text-slate-500 max-w-3xl mx-auto">隨著結構逐漸穩定，易智慧目前形成三個可獨立導入、彼此連結的智慧架構模組。這些模組，是組織智慧自然長出的結果，而非事先拼裝的功能。</p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-10">
+                    <a href="product.html#insight" class="block border border-slate-100 p-8 hover:border-blue-200 hover:bg-slate-50 transition">
+                        <div class="w-12 h-1 bg-blue-600 mb-6"></div>
+                        <h4 class="text-xl font-bold mb-3 text-slate-900">決策理解架構</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">梳理過去決策的判斷脈絡，將隱性經驗轉為可被理解與討論的結構，降低過度依賴個人的風險。</p>
+                    </a>
+                    <a href="product.html#scenario" class="block border border-slate-100 p-8 hover:border-blue-200 hover:bg-slate-50 transition">
+                        <div class="w-12 h-1 bg-blue-600 mb-6"></div>
+                        <h4 class="text-xl font-bold mb-3 text-slate-900">情境推演架構</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">在不確定中保留多種可選路徑，於不同假設下推演影響與取捨，讓決策過程更有結構。</p>
+                    </a>
+                    <a href="product.html#memory" class="block border border-slate-100 p-8 hover:border-blue-200 hover:bg-slate-50 transition">
+                        <div class="w-12 h-1 bg-blue-600 mb-6"></div>
+                        <h4 class="text-xl font-bold mb-3 text-slate-900">知識延續架構</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">保留關鍵經驗與決策脈絡，讓新成員能快速理解組織如何思考，使智慧能隨時間累積而非歸零。</p>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- 聯繫區塊 -->
-        <section id="contact" class="py-24 bg-slate-900 text-white">
+        <!-- 內部使用提醒（輕量） -->
+        <section class="py-16 bg-slate-900 text-white">
             <div class="max-w-4xl mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-8 serif-font">啟動您的決策演化路徑</h2>
-                <p class="text-slate-400 mb-12">我們不只是技術顧問，更是您在智慧化過程中的戰略夥伴。</p>
-                <a href="mailto:service@etz-ai.com" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded-sm font-bold transition shadow-xl">與資深顧問預約診斷</a>
-                <p class="mt-8 text-xs text-slate-500 tracking-widest uppercase">Service Excellence • EtzAI Strategy</p>
+                <h3 class="text-2xl font-bold mb-5 serif-font">本週內部討論用：聚焦、拆解、分工</h3>
+                <p class="text-slate-300 leading-relaxed">這份草稿的目的，是一次把方向、命名原則與參考風格放在同一個畫面上，讓討論聚焦、讓分工更明確。</p>
+                <p class="mt-6 text-xs text-slate-400 tracking-wider">（提示）本頁不追求完美；追求的是「今天決定什麼、誰負責補哪一塊」。</p>
             </div>
         </section>
     </main>
 
     <footer class="bg-white border-t border-slate-100 py-12">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
-            <div>© 2026 EtzAI Consulting Team. All rights reserved.</div>
+            <div>© 2026 EtzAI（內部草稿）</div>
+            <div class="flex space-x-8 mt-4 md:mt-0 uppercase tracking-widest">
+                <a href="index.html" class="hover:text-blue-600">易智慧</a>
+                <a href="product.html" class="hover:text-blue-600">智慧架構</a>
+                <a href="team.html" class="hover:text-blue-600">專業團隊</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+    <!-- 導覽列 -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" stroke="#1e40af" stroke-width="2.5"/>
+                        <path d="M20 15V25M12 20H28" stroke="#1e40af" stroke-width="1.5"/>
+                    </svg>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-tight text-slate-900">易智慧 <span class="text-blue-700">EtzAI</span></span>
+                        <span class="text-[9px] tracking-[0.2em] uppercase text-slate-400 font-bold">Internal Draft</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-12">
+                    <a href="index.html" class="text-sm nav-active">易智慧</a>
+                    <a href="product.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">智慧架構</a>
+                    <a href="team.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">專業團隊</a>
+                    <a href="#note" class="bg-slate-900 text-white px-6 py-2.5 rounded-sm text-sm font-medium hover:bg-blue-800 transition">本週聚焦</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <header class="hero-bg py-28 lg:py-44 text-white relative overflow-hidden">
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-8 tracking-tight leading-tight">讓組織的判斷，<br><span class="text-blue-400">成為可以被理解與延續的智慧</span></h1>
+                <p class="text-xl text-slate-300 max-w-4xl mx-auto mb-4 font-light leading-relaxed">易智慧 EtzAI，協助企業把經驗與決策，轉化為可幫助您持續成長的智慧。</p>
+                <p class="text-xs text-slate-400 tracking-[0.18em] uppercase font-bold">本網站為內部討論用草稿，用於聚焦方向與命名原則，非對外版本。</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mt-12">
+                    <a href="product.html" class="w-full sm:w-auto bg-blue-600 text-white px-10 py-4 rounded-sm font-bold hover:bg-blue-700 transition text-center shadow-lg">查看智慧架構</a>
+                    <a href="team.html" class="w-full sm:w-auto border border-white/30 text-white px-10 py-4 rounded-sm font-medium hover:bg-white/10 transition text-center">看專業團隊如何分工</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 核心問題 -->
+        <section class="py-20 lg:py-24 bg-white border-b border-slate-100">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <h2 class="text-sm uppercase tracking-[0.4em] text-blue-600 font-bold mb-8">What We See</h2>
+                    <p class="text-slate-700 serif-font text-lg leading-relaxed">
+                        易智慧（EtzAI）是一個專注於組織智慧結構化的團隊。我們觀察到，多數企業在成長過程中，每天都在做重要決策，卻很少有人能清楚說明：
+                    </p>
+                    <ul class="mt-8 grid md:grid-cols-3 gap-4 text-sm text-slate-600">
+                        <li class="flex items-start"><span class="text-blue-600 mr-2 mt-1">●</span><span>為什麼當初會這樣判斷</span></li>
+                        <li class="flex items-start"><span class="text-blue-600 mr-2 mt-1">●</span><span>決策依據來自哪些經驗</span></li>
+                        <li class="flex items-start"><span class="text-blue-600 mr-2 mt-1">●</span><span>新成員該如何理解過去的選擇</span></li>
+                    </ul>
+                    <p class="mt-10 text-slate-700 serif-font text-lg leading-relaxed">
+                        當決策只存在於少數人的腦中，組織就會在擴張、人員異動或環境改變時，不斷重來。易智慧處理的，正是這個斷層。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 世界觀段：生命之樹 -->
+        <section class="py-0 bg-white border-b border-slate-100 overflow-hidden">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch">
+
+                <!-- 文字敘事 -->
+                <div class="w-full lg:w-1/2 py-20 lg:py-28 px-6 lg:px-12 flex flex-col justify-center">
+                    <div class="mb-10">
+                        <span class="text-blue-600 font-bold tracking-[0.4em] uppercase text-xs mb-4 block">Worldview</span>
+                        <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 serif-font">EtzAI 取名自 Etz haChayim（生命之樹）</h2>
+                    </div>
+
+                    <div class="serif-font text-lg text-slate-700 leading-relaxed space-y-8">
+                        <p>我們將組織中的經驗、判斷與決策脈絡，視為一棵會隨時間成長的智慧脈絡，而不是一次性交付的系統。</p>
+
+                        <div class="space-y-3 text-slate-700">
+                            <div class="flex items-start"><span class="text-blue-600 mr-3 mt-1">●</span><span><b class="text-slate-900">根部</b>：既有的經驗與隱性判斷</span></div>
+                            <div class="flex items-start"><span class="text-blue-600 mr-3 mt-1">●</span><span><b class="text-slate-900">樹幹</b>：可被理解與驗證的決策邏輯</span></div>
+                            <div class="flex items-start"><span class="text-blue-600 mr-3 mt-1">●</span><span><b class="text-slate-900">枝葉</b>：在不同情境下延伸的應用與推演</span></div>
+                        </div>
+
+                        <p>在這樣的結構中，AI 不再只是給答案的工具，而是成為理解與放大組織思考能力的媒介。</p>
+
+                        <div class="pt-6 border-t border-slate-200">
+                            <p class="text-slate-900 font-bold italic text-lg leading-relaxed">「智慧不是答案本身，而是知道『為什麼這樣判斷』。」</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 圖像區 -->
+                <div class="w-full lg:w-1/2 worldview-image-container relative min-h-[420px] flex items-center justify-center">
+                    <div class="absolute inset-0 opacity-50">
+                        <svg width="100%" height="100%" viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 600C150 550 250 450 400 300" stroke="#cbd5e1" stroke-width="0.6"/>
+                            <path d="M0 500C100 450 200 350 400 100" stroke="#cbd5e1" stroke-width="0.6"/>
+                        </svg>
+                    </div>
+                    <div class="relative z-10 text-center px-10">
+                        <div class="max-w-md mx-auto">
+                            <img src="ETZ logo.jpg" alt="EtzAI 世界觀概念圖" class="w-full h-auto rounded-sm shadow-sm border border-slate-200 bg-white" />
+                            <p class="mt-6 text-xs text-slate-500 leading-relaxed">首頁視覺建議：將「生命之樹」概念圖置於世界觀段落右側，作為品牌敘事的視覺錨點（內部草稿可先用單張圖，後續再替換為正式視覺）。</p>
+                            <p class="mt-3 text-[10px] text-slate-400 tracking-[0.3em] uppercase font-bold">Etz haChayim • Growth of Wisdom</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 我們怎麼做 -->
+        <section class="py-20 lg:py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <h2 class="text-sm uppercase tracking-[0.4em] text-blue-600 font-bold mb-8">How We Work</h2>
+                    <div class="space-y-6 serif-font text-lg text-slate-700 leading-relaxed">
+                        <p>易智慧並不販售單一產品或制式解法。我們與企業一起，從實際運作與決策場景出發，逐步建立能被理解、能被討論、也能被延續的智慧結構。</p>
+                        <p>這些結構會隨著使用與回饋持續調整，而不是在專案結束後停止生長。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 三個智慧架構 -->
+        <section class="py-20 lg:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm uppercase tracking-[0.4em] text-blue-600 font-bold mb-6">Three Structures</h2>
+                    <h3 class="text-3xl lg:text-4xl font-bold text-slate-900 serif-font">三個可獨立導入、彼此連結的智慧架構</h3>
+                    <p class="mt-6 text-slate-600 max-w-3xl mx-auto leading-relaxed">這些架構，是組織智慧自然長出的結果，而非事先拼裝的功能。</p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <a href="product.html#insight" class="block border border-slate-100 hover:border-blue-200 hover:bg-slate-50 transition p-10">
+                        <div class="w-12 h-1 bg-blue-600 mb-8"></div>
+                        <h4 class="text-xl font-bold mb-4 text-slate-900">決策理解架構</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">讓判斷不再只存在於個人經驗中；把「為什麼這樣想」說清楚、留得住。</p>
+                    </a>
+                    <a href="product.html#scenario" class="block border border-slate-100 hover:border-blue-200 hover:bg-slate-50 transition p-10">
+                        <div class="w-12 h-1 bg-blue-600 mb-8"></div>
+                        <h4 class="text-xl font-bold mb-4 text-slate-900">情境推演架構</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">在不確定中保留多種可選路徑；讓決策過程更有結構，而非憑直覺硬選。</p>
+                    </a>
+                    <a href="product.html#memory" class="block border border-slate-100 hover:border-blue-200 hover:bg-slate-50 transition p-10">
+                        <div class="w-12 h-1 bg-blue-600 mb-8"></div>
+                        <h4 class="text-xl font-bold mb-4 text-slate-900">知識延續架構</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">讓組織不必在人員變動後重新開始；把關鍵經驗與脈絡變成可理解的長期資產。</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 本週聚焦區（內部用） -->
+        <section id="note" class="py-20 bg-etz-dark text-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 serif-font">本週內部討論：聚焦與積極介入</h2>
+                        <p class="text-slate-300 leading-relaxed">這份網站草稿的目的，是把命名原則、核心敘事與三個智慧架構一次攤開，逼迫我們在同一張地圖上討論，並把「下一步由誰負責」講清楚。</p>
+                    </div>
+                    <div class="p-8 border border-white/10 bg-white/5">
+                        <h3 class="font-bold mb-3">討論規則（建議）</h3>
+                        <ul class="text-sm text-slate-300 space-y-2 leading-relaxed">
+                            <li>● 不討論修辭：先確定方向與邊界。</li>
+                            <li>● 不談遙遠願景：只談下一個可落地的場景。</li>
+                            <li>● 只回答三題：你不同意哪一句？缺了哪一塊？你要負責補哪一塊？</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-slate-100 py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
+            <div>© 2026 易智慧 EtzAI（內部草稿）</div>
             <div class="flex space-x-8 mt-4 md:mt-0 uppercase tracking-widest">
                 <a href="index.html" class="hover:text-blue-600">Home</a>
-                <a href="product.html" class="hover:text-blue-600">Schemes</a>
+                <a href="product.html" class="hover:text-blue-600">Architecture</a>
                 <a href="team.html" class="hover:text-blue-600">Team</a>
             </div>
         </div>

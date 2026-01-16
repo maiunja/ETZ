@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>顧問團隊 | 易智慧 EtzAI</title>
+    <title>專業團隊 | 易智慧 EtzAI｜內部討論草稿</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Noto Sans TC', sans-serif; scroll-behavior: smooth; background-color: #ffffff; color: #1e293b; }
         .serif-font { font-family: 'Noto Serif TC', serif; }
         .nav-active { color: #1e40af; font-weight: 700; position: relative; }
-        .nav-active::after {
-            content: ''; position: absolute; width: 100%; height: 2px; bottom: -4px; left: 0; background-color: #1e40af;
-        }
-        .portrait-area { 
-            background-color: #f8fafc; 
-            aspect-ratio: 4/5; 
-            border-radius: 2px; 
-            overflow: hidden; 
-            display: flex; 
-            align-items: center; 
+        .nav-active::after { content: ''; position: absolute; width: 100%; height: 2px; bottom: -4px; left: 0; background-color: #1e40af; }
+        .portrait-area {
+            background-color: #f8fafc;
+            aspect-ratio: 4/5;
+            border-radius: 2px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
             justify-content: center;
             border: 1px solid #f1f5f9;
+            position: relative;
         }
-        .member-card {
-            border-top: 1px solid #f1f5f9;
-            padding-top: 2.5rem;
-            padding-bottom: 2.5rem;
-            transition: background-color 0.3s ease;
+        .portrait-area img { width: 100%; height: 100%; object-fit: cover; }
+        .portrait-area .placeholder {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #cbd5e1;
+            background: linear-gradient(135deg, rgba(226,232,240,0.6), rgba(248,250,252,0.9));
         }
-        .member-card:hover {
-            background-color: #fafafa;
-        }
+        .member-card { border-top: 1px solid #f1f5f9; padding-top: 2.5rem; padding-bottom: 2.5rem; transition: background-color 0.3s ease; }
+        .member-card:hover { background-color: #fafafa; }
     </style>
 </head>
 <body class="bg-white">
@@ -47,54 +53,64 @@
                     </svg>
                     <div class="flex flex-col">
                         <span class="text-xl font-bold tracking-tight text-slate-900">易智慧 <span class="text-blue-700">EtzAI</span></span>
-                        <span class="text-[9px] tracking-[0.2em] uppercase text-slate-400 font-bold">Implementation & Consulting</span>
+                        <span class="text-[9px] tracking-[0.2em] uppercase text-slate-400 font-bold">Internal Draft • Focus & Alignment</span>
                     </div>
                 </a>
                 <div class="hidden md:flex items-center space-x-12">
-                    <a href="index.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">服務首頁</a>
-                    <a href="product.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">導入方案</a>
-                    <a href="team.html" class="text-sm nav-active">顧問團隊</a>
-                    <a href="index.html#contact" class="bg-slate-900 text-white px-6 py-2.5 rounded-sm text-sm font-medium hover:bg-blue-800 transition">預約初步診斷</a>
+                    <a href="index.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">易智慧</a>
+                    <a href="product.html" class="text-sm font-medium text-slate-500 hover:text-blue-700 transition">智慧架構</a>
+                    <a href="team.html" class="text-sm nav-active">專業團隊</a>
+                    <a href="index.html#internal-note" class="bg-slate-900 text-white px-6 py-2.5 rounded-sm text-sm font-medium hover:bg-blue-800 transition">本週聚焦</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <main>
-        <!-- 頁頭說明 -->
-        <header class="py-24 lg:py-32 bg-white">
+        <!-- 頁首說明 -->
+        <header class="py-20 lg:py-28 bg-white">
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
                 <div class="max-w-3xl">
-                    <h2 class="text-sm uppercase tracking-[0.4em] text-blue-600 font-bold mb-6">Expertise Matrix</h2>
-                    <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-8 leading-tight serif-font">
-                        跨域協作的專業核心，<br>確保企業級導入的嚴謹與穩定
-                    </h1>
-                    <p class="text-lg text-slate-500 font-light leading-relaxed">
-                        EtzAI 的顧問團隊不僅具備領先的技術實作能力，更擁有深厚的企業治理、流程再造與商業策略背景。我們深知企業轉型的複雜性，因此提供全方位的專業支援，陪伴組織從第一個應用場景開始，逐步建立長期競爭力。
+                    <h2 class="text-sm uppercase tracking-[0.4em] text-blue-600 font-bold mb-6">Professional Team</h2>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-8 leading-tight serif-font">專業團隊，負責讓智慧結構長得正確</h1>
+                    <p class="text-lg text-slate-600 font-light leading-relaxed">
+                        易智慧的專業團隊，並非以顧問角色介入企業決策。我們的責任，是確保智慧架構在設計、導入與演進過程中，能貼近實際運作，而不只是理論或工具。
                     </p>
+                    <p class="mt-6 text-xs text-slate-400 tracking-wider">＊本頁為內部討論用草稿；照片欄位已預留，檔名可直接替換。</p>
                 </div>
             </div>
         </header>
+
+        <!-- 團隊角色總覽 -->
+        <section class="pb-10">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="bg-slate-50 border border-slate-100 p-8 lg:p-10">
+                    <h2 class="text-xl font-bold text-slate-900 mb-4 serif-font">團隊角色總覽</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        團隊成員來自不同背景，包含系統架構、資料理解、產業經驗與實務執行。每一位成員的角色，都圍繞著同一件事：協助把複雜的判斷過程，轉為可被理解的結構；在技術與實際需求之間，維持清楚的界線；確保智慧不是被「做出來」，而是被「用起來」。
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <!-- 核心團隊成員列表 -->
         <section class="pb-24">
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-x-16">
-                    
+
                     <!-- 1. 李庚 Keng Lee -->
                     <div class="member-card flex flex-col md:flex-row gap-8 items-start">
                         <div class="w-full md:w-36 flex-shrink-0">
                             <div class="portrait-area">
-                                <span class="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Portrait</span>
+                                <img src="keng.jpg" alt="李庚 Keng Lee" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder" style="display:none;">Portrait</div>
                             </div>
                         </div>
                         <div class="flex-grow">
                             <h3 class="text-2xl font-bold text-slate-900 mb-1">李庚 Keng Lee</h3>
                             <p class="text-blue-700 font-bold text-xs mb-4 uppercase tracking-wider">執行長</p>
                             <p class="text-slate-900 font-bold text-sm mb-3">角色定位：企業決策智慧與 AI 應用架構設計</p>
-                            <p class="text-slate-500 text-sm leading-relaxed">
-                                專注於協助企業將 AI 導入實際決策與流程中，強調可理解、可驗證、可長期運作的智慧系統。
-                            </p>
+                            <p class="text-slate-500 text-sm leading-relaxed">專注於協助企業將 AI 導入實際決策與流程中，強調可理解、可驗證、可長期運作的智慧結構。</p>
                         </div>
                     </div>
 
@@ -102,16 +118,15 @@
                     <div class="member-card flex flex-col md:flex-row gap-8 items-start">
                         <div class="w-full md:w-36 flex-shrink-0">
                             <div class="portrait-area">
-                                <span class="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Portrait</span>
+                                <img src="frank.jpg" alt="董家銘 Frank" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder" style="display:none;">Portrait</div>
                             </div>
                         </div>
                         <div class="flex-grow">
                             <h3 class="text-2xl font-bold text-slate-900 mb-1">董家銘 Frank</h3>
                             <p class="text-blue-700 font-bold text-xs mb-4 uppercase tracking-wider">技術長</p>
                             <p class="text-slate-900 font-bold text-sm mb-3">角色定位：企業系統整合與 AI 工程落地</p>
-                            <p class="text-slate-500 text-sm leading-relaxed">
-                                負責將複雜的 AI 技術轉化為企業可部署、可維運的系統，確保導入過程穩定且符合實務需求。
-                            </p>
+                            <p class="text-slate-500 text-sm leading-relaxed">負責將複雜的 AI 技術轉化為企業可部署、可維運的系統，確保導入過程穩定且符合實務需求。</p>
                         </div>
                     </div>
 
@@ -119,16 +134,15 @@
                     <div class="member-card flex flex-col md:flex-row gap-8 items-start">
                         <div class="w-full md:w-36 flex-shrink-0">
                             <div class="portrait-area">
-                                <span class="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Portrait</span>
+                                <img src="gweihan.jpg" alt="呂桂漢" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder" style="display:none;">Portrait</div>
                             </div>
                         </div>
                         <div class="flex-grow">
                             <h3 class="text-2xl font-bold text-slate-900 mb-1">呂桂漢</h3>
-                            <p class="text-blue-700 font-bold text-xs mb-4 uppercase tracking-wider">顧問團代表</p>
-                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：企業流程、治理與風險顧問</p>
-                            <p class="text-slate-500 text-sm leading-relaxed">
-                                長期協助企業進行流程再造與治理規劃，確保 AI 應用符合組織運作邏輯與合規要求。
-                            </p>
+                            <p class="text-blue-700 font-bold text-xs mb-4 uppercase tracking-wider">治理與風險設計</p>
+                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：流程、治理與風險框架對齊</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">協助把智慧架構放回企業運作脈絡中，確保可被稽核、可被交接，並符合組織治理與風險控管需求。</p>
                         </div>
                     </div>
 
@@ -136,16 +150,15 @@
                     <div class="member-card flex flex-col md:flex-row gap-8 items-start">
                         <div class="w-full md:w-36 flex-shrink-0">
                             <div class="portrait-area">
-                                <span class="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Portrait</span>
+                                <img src="julia.jpg" alt="蔡易如 Julia" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder" style="display:none;">Portrait</div>
                             </div>
                         </div>
                         <div class="flex-grow">
                             <h3 class="text-2xl font-bold text-slate-900 mb-1">蔡易如 Julia</h3>
                             <p class="text-blue-700 font-bold text-xs mb-4 uppercase tracking-wider">商業與市場推動</p>
-                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：市場策略與企業合作</p>
-                            <p class="text-slate-500 text-sm leading-relaxed">
-                                負責商業模式、產業合作與市場溝通，協助企業理解 AI 導入的實際價值與應用方式。
-                            </p>
+                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：市場策略與企業合作溝通</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">負責把技術語言轉譯為可理解的價值敘事，促進企業合作與導入節奏，確保方向清楚、聚焦且可落地。</p>
                         </div>
                     </div>
 
@@ -153,16 +166,15 @@
                     <div class="member-card flex flex-col md:flex-row gap-8 items-start">
                         <div class="w-full md:w-36 flex-shrink-0">
                             <div class="portrait-area">
-                                <span class="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Portrait</span>
+                                <img src="jay.jpg" alt="麥雲傑 Jay" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder" style="display:none;">Portrait</div>
                             </div>
                         </div>
                         <div class="flex-grow">
                             <h3 class="text-2xl font-bold text-slate-900 mb-1">麥雲傑 Jay</h3>
-                            <p class="text-blue-700 font-bold text-xs mb-4 uppercase tracking-wider">專案與整合顧問</p>
+                            <p class="text-blue-700 font-bold text-xs mb-4 uppercase tracking-wider">專案與整合</p>
                             <p class="text-slate-900 font-bold text-sm mb-3">角色定位：跨域專案管理與系統整合</p>
-                            <p class="text-slate-500 text-sm leading-relaxed">
-                                專精於大型專案治理與跨部門協調，確保複雜 AI 導入專案能穩定落地並持續運作。
-                            </p>
+                            <p class="text-slate-500 text-sm leading-relaxed">專精於大型專案治理與跨部門協調，確保複雜導入專案能穩定落地、持續運作，並把成果沉澱回智慧結構。</p>
                         </div>
                     </div>
 
@@ -170,16 +182,15 @@
                     <div class="member-card flex flex-col md:flex-row gap-8 items-start">
                         <div class="w-full md:w-36 flex-shrink-0">
                             <div class="portrait-area">
-                                <span class="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Portrait</span>
+                                <img src="gary.jpg" alt="夏松明 Gary Hsia" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="placeholder" style="display:none;">Portrait</div>
                             </div>
                         </div>
                         <div class="flex-grow">
                             <h3 class="text-2xl font-bold text-slate-900 mb-1">夏松明 Gary Hsia</h3>
-                            <p class="text-blue-700 font-bold text-xs mb-4 uppercase tracking-wider">產品與策略顧問</p>
-                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：產品定義與決策策略設計</p>
-                            <p class="text-slate-500 text-sm leading-relaxed">
-                                協助企業釐清真正的問題與決策需求，確保 AI 應用具備長期可行的商業價值。
-                            </p>
+                            <p class="text-blue-700 font-bold text-xs mb-4 uppercase tracking-wider">產品與策略設計</p>
+                            <p class="text-slate-900 font-bold text-sm mb-3">角色定位：產品定義與決策策略結構化</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">協助釐清真正的問題與決策需求，讓智慧架構不被功能堆疊帶歪，維持可延伸、可維運的策略路徑。</p>
                         </div>
                     </div>
 
@@ -187,24 +198,26 @@
             </div>
         </section>
 
-        <!-- 聯合承諾區塊 -->
-        <section class="py-24 bg-slate-50 border-t border-slate-100">
-            <div class="max-w-4xl mx-auto px-6 text-center">
-                <h2 class="text-2xl font-bold mb-8 serif-font text-slate-900">顧問團隊的共同承諾</h2>
-                <div class="w-12 h-1 bg-blue-600 mx-auto mb-10"></div>
-                <p class="text-slate-600 leading-relaxed italic text-lg px-4">
-                    「我們的團隊結合顧問、技術與產業經驗，能陪伴企業從第一個 AI 應用開始，逐步建立長期能力。我們不追隨短暫的技術熱潮，我們只在乎如何讓企業的智慧能夠永續生長。」
-                </p>
+        <!-- 顧問角色說明（刻意說清楚） -->
+        <section class="py-20 bg-slate-50 border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <h2 class="text-2xl font-bold mb-6 serif-font text-slate-900">關於顧問角色（刻意說清楚）</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        在易智慧的合作模式中，顧問並非團隊內部角色。顧問是連接易智慧與企業的重要夥伴，協助理解產業情境、促進溝通，並引導導入節奏；而專業團隊的責任，是支撐這樣的合作，讓智慧架構能夠真正落地，而非停留在建議層次。
+                    </p>
+                </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="py-24 bg-white text-center">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8 border-t border-slate-100">
-                <div class="mt-20">
-                    <h2 class="text-3xl font-bold text-slate-900 mb-8 serif-font">開始規劃您的智慧化路徑</h2>
-                    <p class="text-slate-500 mb-12 max-w-xl mx-auto">導入企業級 AI 不是一場技術實驗，而是一項組織能力的提升。聯繫我們，與具備實務經驗的團隊啟動對話。</p>
-                    <a href="index.html#contact" class="inline-block bg-blue-600 text-white px-12 py-4 rounded-sm font-bold hover:bg-blue-700 transition shadow-xl">聯繫顧問團隊</a>
+        <!-- 結語（不 CTA） -->
+        <section class="py-20 bg-white border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <h2 class="text-2xl font-bold mb-6 serif-font text-slate-900">結語</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        我們相信，真正有價值的智慧，不需要被過度包裝。它應該能被理解、被討論，並在組織中自然成長。
+                    </p>
                 </div>
             </div>
         </section>
@@ -213,10 +226,10 @@
     <!-- Footer -->
     <footer class="bg-white border-t border-slate-100 py-16">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
-            <div>© 2026 EtzAI Strategy Implementation. All rights reserved.</div>
+            <div>© 2026 易智慧 EtzAI（內部草稿）</div>
             <div class="flex space-x-12 uppercase tracking-widest">
                 <a href="index.html" class="hover:text-blue-700">Home</a>
-                <a href="product.html" class="hover:text-blue-700">Schemes</a>
+                <a href="product.html" class="hover:text-blue-700">Architecture</a>
                 <a href="team.html" class="hover:text-blue-700 font-bold text-blue-800">Team</a>
             </div>
         </div>
